@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+:root {
+  --color-main: #10002B;
+  --color-secondary: #fb9b86;
+  --color-main-accent: #1e0044;
+
+  --color-nav: #f95935;
+  --color-nav-border: #ae3e25;
+  --color-section-border: #e05030;
+  --color-terminal: #10e280;
+
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f4f4f5;
+  --color-gray-200: #e4e4e7;
+  --color-gray-300: #d4d4d8;
+  --color-gray-400: #a1a1aa;
+  --color-gray-500: #71717a;
+  --color-gray-600: #52525b;
+  --color-gray-700: #3f3f46;
+  --color-gray-800: #27272a;
+  --color-gray-900: #18181b;
+  --color-gray-950: #09090b;
+
+  --color-gray-section-background: #18181b;
+  --color-gray-border: #36363c;
+
+  --color-background-effect: #FFF;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: var(--color-terminal);
+}
+
+::selection {
+  color: var(--color-nav);
+  background: var(--color-terminal);
+}
+
+::-moz-selection {
+  color: var(--color-nav);
+  background: var(--color-terminal);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 0;
+  font: 900 24px/1.4 -system-ui, sans-serif;
+  line-height: 1.5;
+  /* letter-spacing: 0.0625em; */
+  color: var(--color-main);
+  background-color: var(--color-secondary);
+}
+
+/* body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section,
+summary, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+} */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+ul,
+ol,
+li,
+ul li,
+ol li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: var(--color-main-accent);
+}
+
+code {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+  /* padding: 7.5px 15px 7.5px 15px; */
+  border-radius: 6px;
+  color: #10e280;
+  background-color: var(--color-main);
+}
+
+@media(min-width: 415px) {
+  code {
+    padding: 7.5px 15px 7.5px 15px;
+  }
+}

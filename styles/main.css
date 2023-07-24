@@ -1,0 +1,245 @@
+.wrap {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: calc(3rem + 60px) auto 3rem;
+}
+
+@media(min-width: 1025px) {
+  .wrap {
+    margin: calc(3rem + 105px) auto 3rem;
+  }
+}
+
+.heading {
+  text-align: center;
+  margin: 0.025em 0 .75em 0;
+  padding: 175px 0 225px 0;
+  font-size: 1.25rem;
+}
+
+.heading h1 {
+  max-width: 800px;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  border: none;
+  border-top: 15px solid var(--color-main);
+  border-bottom: 15px solid var(--color-main);
+  color: var(--color-main);
+  background-color: var(--color-gray-50);
+}
+
+.terminal {
+  font-size: 3.5rem;
+}
+
+@media(min-width: 1025px) {
+  .heading {
+    font-size: 2.75rem;
+  }
+
+  .terminal {
+    font-size: 7.5rem;
+  }
+}
+
+@media(min-width: 800px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .heading h1 {
+    padding: 15px;
+    border-radius: 7.5px;
+  }
+
+  .terminal {
+    font-size: 5.50rem;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+.sections-wrap {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 135px 0 150px 0;
+}
+
+.reg-section,
+.other-section {
+  border-top: 3px solid var(--color-section-border);
+  background-color: var(--color-secondary);
+}
+
+.reg-section h1,
+.other-section h1,
+.cards-heading {
+  max-width: 450px;
+  padding: 20px 20px 10px 20px;
+  line-height: 1.90ch;
+  font-weight: 900;
+  border: 3px solid var(--color-gray-50);
+  border-radius: 1.50px;
+  color: var(--color-gray-50);
+  background-color: var(--color-main);
+}
+
+.cards-heading {
+  text-align: center;
+}
+
+.reg-section p,
+.other-section p {
+  padding: 20px 35px 20px 35px;
+  line-height: 1.90ch;
+  color: var(--color-main);
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0 150px 0;
+  border-top: 3px solid var(--color-section-border);
+}
+
+.card-containers-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.card-container-one,
+.card-container-two,
+.card-container-three,
+.card-container-etc {
+  height: 350px;
+  width: 250px;
+  max-width: 250px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 5px 15px 5px;
+  padding: 50px;
+  font-size: 1.25rem;
+  border: 6px solid var(--color-gray-50);
+  border-radius: 1.5px;
+  color: var(--color-gray-50);
+  background-color: var(--color-main);
+}
+
+.card-container-one label,
+.card-container-two label,
+.card-container-three label,
+.card-container-etc label {
+  padding: 0;
+  font-size: 5rem;
+}
+
+.card-container-one p,
+.card-container-two p,
+.card-container-three p,
+.card-container-etc p {
+  font-size: 1.75rem;
+}
+
+.control-me-one,
+.control-me-two,
+.control-me-three,
+.control-me-etc {
+  padding-top: 30px;
+}
+
+.control-me-one::after,
+.control-me-two::after,
+.control-me-three::after,
+.control-me-etc::after {
+  content: "";
+  font-size: 1.75rem;
+}
+
+#toggle-one:checked ~ .control-me-one::after,
+#toggle-two:checked ~ .control-me-two::after,
+#toggle-three:checked ~ .control-me-three::after,
+#toggle-etc:checked ~ .control-me-etc::after {
+  content: "📄 index.js";
+  color: var(--color-terminal);
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.source-link {
+  margin: 15px 0 45px 0;
+}
+
+.source-link a {
+  padding: 7.5px 15px 7.5px 15px;
+  border: 3px solid #2f0184;
+  border-radius: 6px;
+  font-family: Menlo;
+  font-size: 35px;
+  font-weight: 900;
+  color: var(--color-terminal);
+  background-color: var(--color-main);
+}
+
+#how ol li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#how ol li code {
+  margin-bottom: 10px;
+}
+
+.term-main {
+  margin-bottom: 15px;
+}
+
+#term-command {
+  max-width: 450px;
+  font-size: 20px;
+}
+
+#term-icon {
+  margin-right: 10px;
+  font-size: 1.5em;
+  color: #fafafa;
+}
+
+#term-info {
+  padding: 0 10px 0 10px;
+  font-size: 20px;
+}
+
+@media(min-width: 415px) {
+  #term-command {
+    font-size: 25px;
+  }
+
+  #term-icon {
+    margin-right: 15px;
+    font-size: 1.5em;
+    color: #fafafa;
+  }
+}
