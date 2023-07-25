@@ -4,11 +4,14 @@
   place-items: center;
   text-align: center;
   margin: calc(3rem + 60px) auto 3rem;
+  margin-top: 60px;
+  background-color: var(--color-secondary);
 }
 
 @media(min-width: 1025px) {
   .wrap {
     margin: calc(3rem + 105px) auto 3rem;
+    margin-top: 75px;
   }
 }
 
