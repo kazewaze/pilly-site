@@ -28,3 +28,28 @@ folderEtc.addEventListener('click', function() {
     folderEtc.innerHTML = "📂" :
     folderEtc.innerHTML = "📁";
 });
+
+folderOne.addEventListener('touchstart', function(evt) {
+  evt.preventDefault();
+  folderOne.innerHTML === "📁" ?
+    folderOne.innerHTML = "📂" :
+    folderOne.innerHTML = "📁";
+});
+folderTwo.addEventListener('touchstart', function(evt) {
+  evt.preventDefault();
+  folderTwo.innerHTML === "📁" ?
+    folderTwo.innerHTML = "📂" :
+    folderTwo.innerHTML = "📁";
+});
+folderThree.addEventListener('touchstart', function(evt) {
+  evt.preventDefault();
+  folderThree.innerHTML === "📁" ?
+    folderThree.innerHTML = "📂" :
+    folderThree.innerHTML = "📁";
+});
+folderEtc.addEventListener('touchstart', function(evt) {
+  evt.preventDefault();
+  folderEtc.innerHTML === "📁" ?
+    folderEtc.innerHTML = "📂" :
+    folderEtc.innerHTML = "📁";
+});
