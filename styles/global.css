@@ -55,21 +55,15 @@ body {
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   font: 900 24px/1.4 -system-ui, sans-serif;
   line-height: 1.5;
-  /* letter-spacing: 0.0625em; */
   color: var(--color-main);
   background-color: var(--theme);
 }
 
-/* body, div,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
-fieldset, form, label, legend, th, td,
-article, aside, figure, footer, header, hgroup, menu, nav, section,
-summary, hgroup {
-  margin: 0;
-  padding: 0;
-  border: 0;
-} */
+@media screen and (orientation: landscape) {
+  body {
+    background-color: var(--color-secondary);
+  }
+}
 
 a:active,
 a:hover {
@@ -104,7 +98,6 @@ code {
   display: flex;
   align-items: center;
   padding: 5px 10px 5px 10px;
-  /* padding: 7.5px 15px 7.5px 15px; */
   border-radius: 6px;
   color: #10e280;
   background-color: var(--color-main);
