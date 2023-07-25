@@ -45,6 +45,10 @@
   background: var(--color-terminal);
 }
 
+head {
+  background-color: var(--theme);
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -52,6 +56,7 @@ body {
   place-items: center;
   text-align: center;
   margin: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   font: 900 24px/1.4 -system-ui, sans-serif;
   line-height: 1.5;
   /* letter-spacing: 0.0625em; */
